@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 //Program that will print “Hello World”
 public class HelloWorld {
 
@@ -47,6 +50,100 @@ class TestFive{
         int a=10,b=20,c=30;
 
         System.out.println( "j: "+j+"\n a: "+a+"\n b: "+b+"\n c: "+c);
+
+    }
+}
+
+//Program that will take your age in year(s) as input and print it.
+class UserInput{
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Your Age: ");
+        int age = input.nextInt();
+        System.out.println("Your Age Is: "+age);
+    }
+}
+
+//Program that will receive the values of an integer, a floating point number, a character from the keyboard and print those values.
+class TestCase{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the integer value: ");
+        int i=input.nextInt();
+        System.out.print("Enter the float value: ");
+        double d=input.nextDouble();
+        System.out.print("Enter the character value: ");
+        char c=input.next().charAt(0);
+
+        System.out.println("Integer value is: "+i);
+        System.out.println("Float value is: "+d);
+        System.out.println("Character value is: "+c);
+
+    }
+}
+
+//Program that will take three integer numbers from keyboard but assign only the first and last inputs to variables and skip any assignment of the middle one.
+class TestCase2{
+    static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        System.out.println("Enter 1st value: ");
+        int first = input.nextInt();
+        System.out.println("Enter 2nd value: ");
+        input.nextInt();
+        System.out.println("Enter 3rd value: ");
+        int third = input.nextInt();
+
+        System.out.println("First value is: "+first);
+        System.out.println("Third value is: "+third);
+    }
+}
+
+//Program that will declare a variable from each data type: double, boolean. Then it will initialize them with values and print them.
+class TestCase3{
+    static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        double d;
+        boolean b;
+
+        System.out.print("Enter double value: ");
+        d=input.nextDouble();
+        System.out.print("Enter boolean value either 1 or 0: ");
+        int value=input.nextInt();
+        b=(value==1);
+
+        System.out.println("The Double value is: "+d);
+        System.out.println("The Boolean value is: "+b);
+
+    }
+}
+
+//Program that will define a constant using “CONST” and print the value.
+class TestCase4{
+    public static void main(String[] args){
+        final double pi= 3.14;
+        final double  goldenRatio= 1.62;
+
+        System.out.println("The value of PI: "+pi);
+        System.out.println("The value of Golden Ration: "+goldenRatio);
+    }
+}
+
+//Program that will define a global and a local variable with the same name but with different
+//values, and then do the following steps in order
+// A. Print the value of the variable before defining the local variable
+//B. Print the value of the variable after defining the local variable
+//C. Explicitly print the value of the variable as global
+
+class TestCase5{
+    static int global=20;
+    public static void main(String[] args) {
+        System.out.println("The value of Global: "+global);
+        int global=10;
+        System.out.println("The value of Local 2: "+global);
+        System.out.println("The value of Local 2: "+TestCase5.global);
 
     }
 }
