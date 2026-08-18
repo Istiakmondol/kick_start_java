@@ -147,3 +147,67 @@ class TestCase5{
 
     }
 }
+
+//Program that will take two numbers X and Y as inputs, then calculate and print the values of their addition, subtraction, multiplication, division (quotient and reminder).
+class TestCase6{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the 1st number: ");
+        int a = input.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int b = input.nextInt();
+
+        System.out.println("Addition: "+(a+b));
+        System.out.println("Subtraction: "+(a-b));
+        System.out.println("Multiplication: "+(a*b));
+        System.out.println("Division Quotient: "+(a/b));
+        System.out.println("Division Reminder: "+(a%b));
+
+    }
+}
+
+//Program that will calculate the area of a circle having radius r. Area, A = 2 * Pi * r
+class TestCase7{
+    public static void main (String[] args){
+        Scanner input = new Scanner (System.in);
+
+        double A;
+        System.out.print("Enter the value of r: ");
+        double r = input.nextDouble();
+        A=(2*3.14159)*r;
+        System.out.printf("The Area of Circle is: %.2f%n", A);
+
+    }
+}
+
+//Program that will take two numbers (a, b) as inputs and compute the value of the equation– (Without using math.h) X = (3.31 * a^2 + 2.01 * b^3) / (7.16 * b^2 + 2.01 * a^3)
+
+class TestCase8{
+    static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter 1st number: ");
+        double a=input.nextDouble();
+        System.out.print("Enter 2nd number: ");
+        double b=input.nextDouble();
+        double x = (3.31*(a*a)+2.01*(b*b*b)) / (7.16 * (b*b) + 2.01 * (a*a*a));
+
+        System.out.printf("The Result is: %.6f%n",x);
+    }
+}
+
+//Program that will increment and decrement a number X by 1 inside the printf function. (Use ++ and - - operators)
+class TestCase9{
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the number: ");
+        int x = input.nextInt();
+
+        System.out.println("x++: "+ x++);
+        System.out.println("++x: "+ ++x);
+        System.out.println("x--: "+ x--);
+        System.out.println("--x: "+ --x);
+    }
+}
