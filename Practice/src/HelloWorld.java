@@ -252,3 +252,41 @@ class TestCase11{
 //perform floating to integer and integer to floating conversions using
 //(a) Assignment operation
 //(b) Type casting
+class TestCase12{
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter the integer number: ");
+        int a=input.nextInt();
+        int x=a;
+        System.out.print("Enter the float number: ");
+        double b=input.nextDouble();
+        double y=b;
+
+        System.out.printf("Assignment: %.3f assigned to an int produces", b);
+        int temp =a;
+        a=(int)b;
+        System.out.printf(" %d", a);
+
+        System.out.println(" ");
+
+        System.out.printf("Assignment: %d assigned to an float produces", temp);
+        b=temp;
+        System.out.printf(" %.3f", b);
+        System.out.println(" ");
+
+
+        System.out.printf("type casting: %.3f assigned to an int produces", y);
+        int temp1 =x;
+        x=(int)y;
+        System.out.printf(" %d", x);
+
+        System.out.println(" ");
+
+        System.out.printf("type casting: %d assigned to an float produces", temp1);
+        y=temp1;
+        System.out.printf(" %.3f", y);
+        System.out.println(" ");
+
+    }
+}
