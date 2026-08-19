@@ -290,3 +290,25 @@ class TestCase12{
 
     }
 }
+
+//Program that will take two numbers as inputs and print the maximum value. (Using conditional operator - ?)
+class TestCase13 {
+    public static void main (String[] args){
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter the 1st number: ");
+        int a=input.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int b=input.nextInt();
+
+        if(a>b){
+            System.out.printf("%d is grater then %d",a,b);
+        }
+        else if(b>a){
+            System.out.printf("%d is greater then %d",b,a);
+        }
+        else{
+            System.out.printf("number 1 and number 2 both are equal");
+        }
+    }
+}
