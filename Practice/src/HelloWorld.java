@@ -211,3 +211,44 @@ class TestCase9{
         System.out.println("--x: "+ --x);
     }
 }
+
+//Program that will increment and decrement a number X by Y. (Use += and -= operators)
+class TestCase10{
+    static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter 1st number: ");
+        int a=input.nextInt();
+        System.out.print("Enter 2nd number: ");
+        int b=input.nextInt();
+
+        a+=b;
+        System.out.println("Incremented Value: "+ a);
+        a-=(2*b);
+        System.out.println("Decremented Value: "+ a);
+
+    }
+}
+
+//Program that will multiply and divide a number X by Y. (Use *= and /= operators)
+class TestCase11{
+    public static void main (String[] args){
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter 1st number: ");
+        int a=input.nextInt();
+        System.out.print("Enter 2nd number: ");
+        int b=input.nextInt();
+
+        a*=b;
+        System.out.println("Multiplication Value: "+ a);
+        a=a/b;
+        a/=b;
+        System.out.println("Division Value: "+ a);
+    }
+}
+
+//Program that will declare and initialize an integer and a floating point number. Then it will
+//perform floating to integer and integer to floating conversions using
+//(a) Assignment operation
+//(b) Type casting
