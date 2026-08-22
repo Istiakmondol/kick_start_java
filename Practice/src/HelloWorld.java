@@ -312,3 +312,48 @@ class TestCase13 {
         }
     }
 }
+
+//Program that will take two numbers as inputs and print the maximum value. (Using conditional operator - ?)
+class TestCase14 {
+    public static void main (String[] args){
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter the 1st number: ");
+        int a=input.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int b=input.nextInt();
+
+        int maximum = (a > b) ? a : b;
+        System.out.printf("Maximum value = %d",maximum);
+    }
+}
+
+//Program that will take a, b & c as inputs and decide if the statements are True (1) of False (0)
+class TestCase15{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the 1st number: ");
+        int a=input.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int b=input.nextInt();
+        System.out.print("Enter the 3rd number: ");
+        int c=input.nextInt();
+
+        System.out.println("a: "+(((a+b)<=80)?1:0));
+        System.out.println("b: "+(((a + b) == 0)?1:0));
+        System.out.println("c: "+((c != 0)?1:0));
+    }
+}
+
+// Program to find the size of int, float, double and char
+
+class TestCase16 {
+    public static void main(String[] args) {
+
+        System.out.println("Size of int in byte(s) = " + Integer.BYTES);
+        System.out.println("Size of float in byte(s) = " + Float.BYTES);
+        System.out.println("Size of double in byte(s) = " + Double.BYTES);
+        System.out.println("Size of char in byte(s) = " + Character.BYTES);
+    }
+}
