@@ -357,3 +357,143 @@ class TestCase16 {
         System.out.println("Size of char in byte(s) = " + Character.BYTES);
     }
 }
+
+//Program that will decide whether a number is positive or not.
+class TestCase17{
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the number: ");
+        double num = input.nextDouble();
+
+        if(num>=0){
+            System.out.println("Positive");
+        }
+        else{
+            System.out.println("Negative");
+        }
+    }
+}
+
+//Program that will decide whether a number is even or odd.
+class TestCase18{
+    static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter the number: ");
+        int num = input.nextInt();
+
+        if(num%2==0){
+            System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+    }
+}
+
+//Program that will take an integer of length one from the terminal and then display the digit in English.
+class TestCase19{
+    static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the number: ");
+        int num = input.nextInt();
+        switch (num){
+            case 0:
+                System.out.println("Zero");
+                break;
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            case 3:
+                System.out.println("Three");
+                break;
+            case 4:
+                System.out.println("Four");
+                break;
+            case 5:
+                System.out.println("Five");
+                break;
+            case 6:
+                System.out.println("Six");
+                break;
+            case 7:
+                System.out.println("Seven");
+                break;
+            case 8:
+                System.out.println("Eight");
+                break;
+            case 9:
+                System.out.println("Nine");
+                break;
+            default:
+                System.out.println("Invalid Input");
+                break;
+
+
+        }
+    }
+}
+
+/*Program that will check whether a triangle is valid or not, when the three angles (angle value
+  should be such that, 0 < value < 180) of the triangle are entered through the keyboard.
+  [Hint: A triangle is valid if the sum of all the three angles is equal to 180 degrees.]*/
+
+class TestCase20{
+    static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number A between 0 to 180: ");
+        int a = input.nextInt();
+        System.out.print("Enter number B between 0 to 180: ");
+        int b = input.nextInt();
+        System.out.print("Enter number C between 0 to 180: ");
+        int c = input.nextInt();
+
+        if((a+b+c)==180){
+            System.out.println("YES");
+        }
+        else{
+            System.out.println("NO");
+        }
+    }
+}
+
+//Program that will read from the console a random positive nonzero number and determine if it is a power of 2. (n > 0 && (n & (n - 1)) == 0)*
+class TestCase21{
+    static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+
+        if (num > 0){
+            if(num==1){
+                System.out.println("Yes");
+                return;
+            }
+                while(num>1){
+                    num=num/2;
+                    if(num==1){
+                        System.out.println("Yes");
+                        break;
+                    }
+                    if(num%2==0) {
+                        continue;
+                    }
+                    else {
+                        System.out.println("No");
+                        break;
+                    }
+                }
+        }
+        else{
+            System.out.println("No");
+        }
+
+    }
+}
